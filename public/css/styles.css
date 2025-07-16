@@ -1,0 +1,133 @@
+:root {
+    --premiere-couleur: #0d47a1;
+    --secondary-couleur:#2196f3;
+    --troisieme-couleur:#90caf9;
+
+    --btn-primo-couleur:#d3d3d3;
+    --btn-secon-couleur:#598392;
+
+}
+
+
+/* Section navbar */
+
+.grand_ecran {
+    min-height: 120vh;
+
+}
+
+
+
+.grand_ecran .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    
+}
+
+
+.grand_ecran .navbar .logo {
+    height: 10%;
+    width: 100%;
+}
+
+
+.grand_ecran .navbar .logo a {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.grand_ecran .navbar .logo a .span1 {
+    color: white;
+    
+}
+.grand_ecran .navbar .logo a .span2 {
+    color: rgb(54, 53, 53);
+
+}
+
+
+.grand_ecran .navbar .ul1 {
+    min-height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 5px 8px 10px 0px;
+    margin-left: 3px;
+}
+
+
+
+.grand_ecran .navbar ul li {
+    align-items: center;
+    width: 100%;
+    display: flex !important;
+    gap: 1.7rem !important;
+    margin-left: 10px;
+    border-bottom: 2px solid rgb(198, 196, 196);
+    font-weight: 300;
+    align-items: center;
+    cursor: pointer;
+}
+
+.grand_ecran .navbar ul li svg {
+    width: 30px;
+    height: 30px;
+}
+
+.grand_ecran .navbar ul .bouge {
+    margin-left: 55px;
+}
+
+
+.grand_ecran .navbar ul li:hover  {
+    background-color: var(--btn-secon-couleur);
+}
+
+
+/* Derniere partie du navbar */
+
+.grand_ecran .navbar .dethepro {
+    display: flex;
+    height: 10%;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.grand_ecran .contenuprim {
+    margin-left: 25%;
+    width: 100%;
+    
+}
+
+
+
+/* Deuxieme section-contenu */
+
+.grand_ecran .contenuprim .content {
+    width: 75%;
+    height: 100%;
+    
+}
+
+
+
+/* Troisieme section-informations */
+
+.grand_ecran .contenuprim .informations {
+   
+    width: 25%;
+}
+

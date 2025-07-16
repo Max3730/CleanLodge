@@ -1,0 +1,155 @@
+/* Base styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Figtree', sans-serif;
+    background-color: #ced4da;
+    min-height: 100vh;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: rgb(239, 239, 239);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Logo */
+.div-logo {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #003566;
+    text-decoration: none;
+}
+
+/* Content (login/register box) */
+.content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    box-shadow: 0px 2px 3px 3px rgb(188, 187, 187);
+}
+
+.content form {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Input styling */
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: #003566;
+    outline: none;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #495057;
+}
+
+.forgot-link {
+    text-decoration: none;
+    color: #0a66c2;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+button, .btn-primary {
+    width: 50%;
+    height: 35px;
+    padding: 12px;
+    background-color: #a5b5c6;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover, .btn-primary:hover {
+    background-color: #9099a1;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #484849;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.register, .login {
+    transform: translateY(-0.5rem);
+}
+
+
+.register  a, .login a{
+    text-decoration: none;
+    color: #003566;
+    
+}
+
+.register  a:hover, .login a:hover {
+    text-decoration: underline;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
