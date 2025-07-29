@@ -18,27 +18,23 @@
     <body class="w-full h-full">
 
     <!-- Section pour les grandes écrans -->
-        <div class="grand_ecran flex justify-between w-full h-full">
+        <div class="grand_ecran flex justify-between hidden lg:flex w-full h-full">
 
-           
-
-                
-
-           
+                  
 
             <!-- Section pour les menus -->
-                <nav class="navbar bg-blue-400">
+                <nav class="navbar bg-gray-200">
 
 
                  {{-- Section logo --}}
 
                     <div class="logo">
-                        <a href="" class="flex"><span class="span1">Clean</span><span class="span2">Lodge</span></a>
+                        <a href="" class="flex"><span class="text-gray-900">Clean</span><span class="span2 text-blue-700">Lodge</span></a>
                     </div>
 
                     <!-- Section pour les menus -->
 
-                    <ul class="ul1">
+                    <ul class="ul1 flex flex-col gap-4 lg:flex-row lg:gap-8">
 
                         {{-- 1 --}}
                             <li class="flex g-[2rem]">
@@ -46,7 +42,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                                 </svg>
 
-                                <a href="" class="{{ Request::is('/accueil') ?  'text-white' : ''}}">Accueil</a>
+                                <a href="{{ route('accueil') }}" class="{{ Request::is('/accueil') ?  'text-white' : ''}} text-blue-500">Accueil</a>
                             </li>
 
                         {{-- 2 --}}
@@ -56,7 +52,7 @@
                                 </svg>
 
 
-                                <a href="">Rechercher un logement</a>
+                                <a href="" class="text-blue-500">Rechercher un logement</a>
                             </li>
 
                         {{-- 3 --}}
@@ -66,7 +62,7 @@
                                 </svg>
 
 
-                                <a href="">Mes demandes</a>
+                                <a href="" class="text-blue-500">Mes demandes</a>
                             </li>
 
                         {{-- 4 --}}
@@ -76,17 +72,9 @@
                                 </svg>
 
 
-                                <a href="">Mon Statut Locatif</a>
+                                <a href="{{ route('statut') }}" class="text-blue-500">Mon Statut Locatif</a>
                             </li>
 
-                        {{-- 5 --}}
-                            <li class="flex g-[2rem]">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
-                                </svg>
-
-                                <a href="">Mon Groupe</a>
-                            </li>
 
                         {{-- Espace Propio/Agence --}}
 
@@ -95,7 +83,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
 
-                                <a href="">Créer ma page Pro / Agence</a>
+                                <a href="{{ route('create') }}" class="text-blue-500">Créer ma page Pro / Agence</a>
                             </li>
 
                         {{-- Propio --}}
@@ -105,7 +93,7 @@
                                 </svg>
 
 
-                                <a href="">Espace Propriétaire</a>
+                                <a href="{{ route('proprio') }}" class="text-blue-500">Espace Propriétaire</a>
                             </li>
                         {{-- Agence --}}
                             <li class="flex g-[2rem] bouge">
@@ -114,7 +102,7 @@
                                 </svg>
 
 
-                                <a href="">Espace Agence</a>
+                                <a href="" class="text-blue-500">Espace Agence</a>
                             </li>
 
                             
@@ -126,7 +114,7 @@
                                 </svg>
 
 
-                                <a href="">Signaler un problème</a>
+                                <a href="" class="text-blue-500">Signaler un problème</a>
                             </li>
 
                         {{-- 7 --}}
@@ -137,7 +125,7 @@
 
 
 
-                                <a href="">Notifications</a>
+                                <a href="" class="text-blue-500">Notifications</a>
                             </li>
 
                         {{-- 8 --}}
@@ -149,7 +137,7 @@
 
 
 
-                                <a href="">Aide / FAQ</a>
+                                <a href="" class="text-blue-500">Aide / FAQ</a>
                             </li>
 
 
@@ -170,7 +158,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
                             </svg>
 
-                            <span>Thème</span>
+                            <span class="text-blue-500">Thème</span>
                         
                         </li>
 
@@ -182,7 +170,7 @@
                             </svg>
 
 
-                            <a href="">Profil</a>
+                            <a href="{{ route('profile.edit') }}" class="text-blue-500">Profil</a>
                         
                         </li>
 
@@ -196,7 +184,7 @@
 
 
 
-                            <a href="">Paramètre</a>
+                            <a href="{{ route('parametre') }}" class="text-blue-500">Paramètre</a>
                         
                         </li>
 
@@ -208,7 +196,12 @@
 
 
 
-                            <a href="" >Déconnexion</a>
+                            <form method="POST" action="{{ route('logout') }}" class="w-full text-left">
+                                @csrf
+                                <button type="submit" class="w-full text-left text-red-600 hover:underline">
+                                    Déconnexion
+                                </button>
+                            </form>
                         
                         </li>
 
@@ -218,15 +211,17 @@
 
                 </nav>
             <!-- Contenu de la page active -->
-                <div class="contenuprim flex">
-                    <main class="content">
+                <div class="contenuprim flex flex-wrap">
+
+            {{-- Contenu --}}
+                    <main class="content w-full mt-[5rem] lg:w-3/4 lg:pl-6">
+
                         @yield('content')
                     </main>
 
             <!-- Coté affiches publicités et autre -->
-             
-                    <div class="informations">
-                        
+                    <div class="informations hidden lg:block w-full lg:w-1/4 p-4">
+                        <p class="text-center">Zone infos</p>
                     </div>
                 </div>
                 
@@ -234,9 +229,119 @@
         </div>
 
 
-        <div class="petit_ecran">
 
+      {{-- Section pour les petits écrans --}}
+        <div class="lg:hidden relative petit_ecran">
+            <!-- Menu fixe en haut -->
+            <div class="fixed top-0 left-0 w-full bg-blue-300 shadow z-50 flex items-center justify-between p-4">
+                <button id="burger" class="p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-800" viewBox="0 0 512 512">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
+                        d="M80 160h352M80 256h352M80 352h352"/>
+                    </svg>
+                </button>
+                <span class="text-xl font-semibold">CleanLodge</span>
+            </div>
+
+            <!-- Menu déroulant -->
+            <ul id="mobileMenu" class="hidden flex flex-col gap-6 p-4 fixed top-16 left-0 w-full bg-blue-300 h-[calc(100vh-4rem)] overflow-y-auto z-40">
+
+                
+
+                        {{-- 1 --}}
+                            <li class="flex ">
+
+                                <a href="{{ route('accueil') }}" class="{{ Request::is('/accueil') ?  'text-white' : ''}}">Accueil</a>
+                            </li>
+
+                        {{-- 2 --}}
+                            <li class="flex ">
+
+                                <a href="">Rechercher un logement</a>
+                            </li>
+
+                        {{-- 3 --}}
+                            <li class="flex ">
+
+                                <a href="">Mes demandes</a>
+                            </li>
+
+                        {{-- 4 --}}
+                            <li class="flex ">
+
+                                <a href="">Mon Statut Locatif</a>
+                            </li>
+
+                        {{-- Espace Propio/Agence --}}
+
+                            <li class="flex ">
+
+                                <a href="">Créer ma page Pro / Agence</a>
+                            </li>
+
+                        {{-- Propio --}}
+                            <li class="flex  bouge">
+                         
+                                <a href="">Espace Propriétaire</a>
+                            </li>
+                        {{-- Agence --}}
+                            <li class="flex  bouge">
+                           
+                                <a href="">Espace Agence</a>
+                            </li>
+
+                            
+
+                        {{-- 6 --}}
+                            <li class="flex ">
+
+                                <a href="">Signaler un problème</a>
+                            </li>
+
+                        {{-- 7 --}}
+                            <li class="flex">
+
+                                <a href="">Notifications</a>
+                            </li>
+
+                        {{-- 8 --}}
+                            <li class="flex">
+                            
+                                <a href="">Aide / FAQ</a>
+                            </li>
+
+
+                        {{-- Section paramet --}}
+                        <li class="flex">
+
+                            <a href="{{ route('profile.edit') }}">Profil</a>
+                        
+                        </li>
+
+                        <li class="flex">
+
+                            <a href="">Paramètre</a>
+                        
+                        </li>
+
+                        <li class="flex">
+
+
+                            <a href="{{ route('logout') }}">Déconnexion</a>
+                        
+                        </li>
+                <!-- etc -->
+            </ul>
+
+            <!-- Contenu principal mobile (avec un yield séparé) -->
+            <main class="pt-20 px-4 petit-content">
+                @yield('content_mobile')
+            </main>
         </div>
+
+
+
+        <script src="{{ asset('scripts/script.js') }}"></script>
         
     </body>
 </html>
